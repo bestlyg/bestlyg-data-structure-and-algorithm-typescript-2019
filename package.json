@@ -1,0 +1,50 @@
+{
+  "name": "bestlyg-data-structure-and-algorithm-typescript",
+  "version": "1.0.0",
+  "description": "typescript数据结构与算法",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --listFiles",
+    "start:node": "tsc && node dist/index.js",
+    "start:ts-node": "ts-node src/index.ts",
+    "lint": "prettier --write ./**/*.ts && prettier --write ./**/*.json && prettier --write ./**/*.js",
+    "test": "jest --runInBand --detectOpenHandles --colors ",
+    "commit": "git-cz",
+    "auto-commit": "git pull && git add -A && git-cz && git push origin master"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/bestlyg/bestlyg-data-structure-and-algorithm-typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^25.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.27.0",
+    "@typescript-eslint/parser": "^2.27.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "ts-jest": "^25.3.1",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.8.3",
+    "git-cz": "^4.3.1",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.1.1",
+    "cz-conventional-changelog": "^3.2.0"
+  }
+}
